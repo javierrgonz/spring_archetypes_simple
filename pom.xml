@@ -10,7 +10,7 @@
 	<artifactId>spring.simple</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spring Simple Archetype</name>
-	<url>https://github.com/javierrgonz/pdfCC.git</url>
+	<url>https://github.com/javierrgonz/spring_archetypes_simple.git</url>
 
 	<!-- Propiedades -->
 	<properties>
