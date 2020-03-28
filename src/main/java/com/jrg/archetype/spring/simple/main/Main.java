@@ -15,7 +15,7 @@ import com.jrg.archetype.spring.simple.utils.MessageUtils;
  */
 public class Main {
 
-    // Gets the logger
+    /** The logger **/
     private static Logger logger = LogManager.getLogger();
 
     /**
@@ -25,15 +25,22 @@ public class Main {
      */
     public static void main(String[] args) {
 
-	// Loads application context
-	MainUtils.loadAppContext();
+	try {
 
-	// Log start
-	logger.debug(MessageUtils.getMessage(MessageConstants.APP_START_MSG));
+	    // Loads application context
+	    MainUtils.loadAppContext();
 
-	// Loads component with value charge
-	ComponentWithValueCharge componentWithValueCharge = (ComponentWithValueCharge) MainUtils.getAppContext()
-		.getBean("componentWithValueCharge");
+	    // Log start
+	    logger.debug(MessageUtils.getMessage(MessageConstants.APP_START_MSG));
 
+	    // Loads component with value charge
+	    ComponentWithValueCharge componentWithValueCharge = (ComponentWithValueCharge) MainUtils.getAppContext()
+		    .getBean("componentWithValueCharge");
+
+	    componentWithValueCharge.throwException();
+
+	} catch (Throwable e) {
+	    logger.debug("Main exception manager");
+	}
     }
 }

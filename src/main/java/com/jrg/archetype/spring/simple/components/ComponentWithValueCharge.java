@@ -17,4 +17,7 @@ public class ComponentWithValueCharge {
     @Getter
     private String mssg;
 
+    public void throwException() throws Exception {
+	throw new Exception();
+    }
 }

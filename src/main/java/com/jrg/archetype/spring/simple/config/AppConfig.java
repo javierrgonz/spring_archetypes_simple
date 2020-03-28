@@ -7,6 +7,7 @@ import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 
@@ -18,7 +19,9 @@ import com.jrg.archetype.spring.simple.components.ComponentWithValueCharge;
  * @author Javier RG
  */
 @Configuration
+@EnableAspectJAutoProxy
 @ComponentScan("com.jrg.archetype.spring.simple.components")
+@ComponentScan("com.jrg.archetype.spring.simple.aspects")
 @PropertySource("classpath:config.properties")
 public class AppConfig {
 
