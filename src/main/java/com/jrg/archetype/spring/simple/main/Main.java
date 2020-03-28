@@ -9,7 +9,9 @@ import com.jrg.archetype.spring.simple.utils.MainUtils;
 import com.jrg.archetype.spring.simple.utils.MessageUtils;
 
 /**
- * The Main class
+ * The Main
+ * 
+ * @author Javier RG
  */
 public class Main {
 

@@ -4,9 +4,9 @@
 package com.jrg.archetype.spring.simple.constants;
 
 /**
- * The messages
+ * The MessageConstants
  * 
- * @author Javi
+ * @author Javier RG
  */
 public class MessageConstants {
 

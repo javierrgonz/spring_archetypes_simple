@@ -13,9 +13,9 @@ import org.springframework.context.support.ReloadableResourceBundleMessageSource
 import com.jrg.archetype.spring.simple.components.ComponentWithValueCharge;
 
 /**
- * The app config file
+ * The AppConfig
  * 
- * @author Javi
+ * @author Javier RG
  */
 @Configuration
 @ComponentScan("com.jrg.archetype.spring.simple.components")

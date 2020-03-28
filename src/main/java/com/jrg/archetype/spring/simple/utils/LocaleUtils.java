@@ -15,8 +15,7 @@ import com.jrg.archetype.spring.simple.constants.ConfigConstants;
 /**
  * The LocaleUtils
  * 
- * @author Javi
- *
+ * @author Javier RG
  */
 public class LocaleUtils {
 

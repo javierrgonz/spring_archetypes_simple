@@ -5,6 +5,11 @@ import org.springframework.stereotype.Component;
 
 import lombok.Getter;
 
+/**
+ * The ComponentWithValueCharge
+ * 
+ * @author Javier RG
+ */
 @Component
 public class ComponentWithValueCharge {
 

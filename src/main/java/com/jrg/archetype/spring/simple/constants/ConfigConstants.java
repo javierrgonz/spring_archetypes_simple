@@ -4,9 +4,9 @@
 package com.jrg.archetype.spring.simple.constants;
 
 /**
- * The constants
+ * The ConfigConstants
  * 
- * @author Javi
+ * @author Javier RG
  *
  */
 public class ConfigConstants {

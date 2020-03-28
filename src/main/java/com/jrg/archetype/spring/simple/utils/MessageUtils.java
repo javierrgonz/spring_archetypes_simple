@@ -8,8 +8,7 @@ import java.util.Locale;
 /**
  * The MessageUtils
  * 
- * @author Javi
- *
+ * @author Javier RG
  */
 public class MessageUtils {
 

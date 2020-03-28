@@ -9,9 +9,9 @@ import org.springframework.core.env.Environment;
 import com.jrg.archetype.spring.simple.config.AppConfig;
 
 /**
- * The MainUtils class
+ * The MainUtils
  * 
- * @author Javi
+ * @author Javier RG
  */
 public class MainUtils {
 
