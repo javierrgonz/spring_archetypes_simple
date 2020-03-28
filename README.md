@@ -12,3 +12,7 @@ Arquetipo simple con Spring mediante configuracion en Java. Incluye:
 - Spring: 5.2.5.RELEASE
 - Log4j2: 2.8.2
 - Lombok: 1.16.16
+
+## Changelog
+
+0.0.1-SNAPSHOT - Version inicial
