@@ -1,12 +1,7 @@
 package com.jrg.archetype.spring.simple.main;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.jrg.archetype.spring.simple.components.ComponentWithValueCharge;
-import com.jrg.archetype.spring.simple.constants.MessageConstants;
 import com.jrg.archetype.spring.simple.utils.MainUtils;
-import com.jrg.archetype.spring.simple.utils.MessageUtils;
 
 /**
  * The Main
@@ -14,9 +9,6 @@ import com.jrg.archetype.spring.simple.utils.MessageUtils;
  * @author Javier RG
  */
 public class Main {
-
-    /** The logger **/
-    private static Logger logger = LogManager.getLogger();
 
     /**
      * The main method
@@ -26,21 +18,16 @@ public class Main {
     public static void main(String[] args) {
 
 	try {
-
 	    // Loads application context
 	    MainUtils.loadAppContext();
 
-	    // Log start
-	    logger.debug(MessageUtils.getMessage(MessageConstants.APP_START_MSG));
+	    // Config log and get logger
 
 	    // Loads component with value charge
 	    ComponentWithValueCharge componentWithValueCharge = (ComponentWithValueCharge) MainUtils.getAppContext()
 		    .getBean("componentWithValueCharge");
 
-	    componentWithValueCharge.throwException();
-
 	} catch (Throwable e) {
-	    logger.debug("Main exception manager");
 	}
     }
 }

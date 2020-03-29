@@ -64,7 +64,7 @@ public class MainUtils {
      * @param property the property name
      * @return the property
      */
-    public static String getStringProperty(String property) {
-	return MainUtils.getEnvironment().getProperty(property).replace("\"", "");
+    public static String getProperty(String property) {
+	return MainUtils.getEnvironment().getProperty(property);
     }
 }

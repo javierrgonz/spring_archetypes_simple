@@ -13,11 +13,8 @@ import lombok.Getter;
 @Component
 public class ComponentWithValueCharge {
 
-    @Value("${msg.hello}")
     @Getter
+    @Value("${config.environment}")
     private String mssg;
 
-    public void throwException() throws Exception {
-	throw new Exception();
-    }
 }

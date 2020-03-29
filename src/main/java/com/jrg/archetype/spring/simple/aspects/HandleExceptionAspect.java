@@ -3,8 +3,6 @@
  */
 package com.jrg.archetype.spring.simple.aspects;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
@@ -19,9 +17,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class HandleExceptionAspect {
 
-    /** The logger **/
-    private static Logger logger = LogManager.getLogger();
-
     /**
      * Manejador de excepciones
      * 
@@ -29,6 +24,5 @@ public class HandleExceptionAspect {
      */
     @AfterThrowing(pointcut = "execution(* com.jrg.archetype.spring.simple.*.*.*(..))", throwing = "ex")
     public void logError(Exception ex) {
-	logger.error(ex);
     }
 }

@@ -40,4 +40,5 @@ public class AppConfig {
     public ComponentWithValueCharge componentWithValueCharge() {
 	return new ComponentWithValueCharge();
     }
+
 }
