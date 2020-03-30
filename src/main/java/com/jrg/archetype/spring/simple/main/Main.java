@@ -1,6 +1,5 @@
 package com.jrg.archetype.spring.simple.main;
 
-import com.jrg.archetype.spring.simple.components.ComponentWithValueCharge;
 import com.jrg.archetype.spring.simple.utils.MainUtils;
 
 /**
@@ -10,24 +9,21 @@ import com.jrg.archetype.spring.simple.utils.MainUtils;
  */
 public class Main {
 
-    /**
-     * The main method
-     * 
-     * @param args
-     */
-    public static void main(String[] args) {
+	/**
+	 * The main method
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
 
-	try {
-	    // Loads application context
-	    MainUtils.loadAppContext();
+		try {
+			// Loads application context
+			MainUtils.loadAppContext();
 
-	    // Config log and get logger
+			throw new Exception();
 
-	    // Loads component with value charge
-	    ComponentWithValueCharge componentWithValueCharge = (ComponentWithValueCharge) MainUtils.getAppContext()
-		    .getBean("componentWithValueCharge");
+		} catch (Throwable e) {
 
-	} catch (Throwable e) {
+		}
 	}
-    }
 }

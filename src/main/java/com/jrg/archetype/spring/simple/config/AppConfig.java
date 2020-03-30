@@ -26,7 +26,7 @@ import com.jrg.archetype.spring.simple.components.ComponentWithValueCharge;
 public class AppConfig {
 
     // Message source
-    @Bean("messageSource")
+    @Bean(name = "messageSource")
     public MessageSource messageSource() {
 	ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
 	messageSource.setBasename("classpath:messages/messages");

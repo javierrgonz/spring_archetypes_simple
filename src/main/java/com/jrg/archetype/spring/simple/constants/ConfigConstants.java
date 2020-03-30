@@ -14,7 +14,9 @@ public class ConfigConstants {
     /** Config constants **/
     public static String DEFAULT_LANGUAGE = "config.defaultLanguage";
     public static String ENVIRONMENT = "config.environment";
-
+    public static String LOGGIN_PATH = "logging.config";
+    public static String SPRING_PROFILES_ACTIVE = "spring.profiles.active";
+    
     /** Logger constants **/
     public static String LOG_LEVEL = "logger.level";
     public static String LOG_APPENDERS = "logger.appenders";

@@ -8,7 +8,7 @@
 	<!-- Artifact properties -->
 	<groupId>com.jrg.archetype</groupId>
 	<artifactId>spring.simple</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>Spring Simple Archetype</name>
 	<url>https://github.com/javierrgonz/spring_archetypes_simple.git</url>
 
@@ -21,7 +21,7 @@
 		<logback.classic.version>1.2.3</logback.classic.version>
 		<org.projectlombok.version>1.16.16</org.projectlombok.version>
 		<org.aspectj.version>1.8.9</org.aspectj.version>
-		<org.logback-extensions.version>0.1.5</org.logback-extensions.version>
+		<log.version>2.0.0-RC1</log.version>
 	</properties>
 
 	<!-- Dependencias -->
@@ -59,18 +59,18 @@
 			<version>${org.aspectj.version}</version>
 		</dependency>
 
-		<!-- Logback -->
+		<!-- tinyLog -->
 		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>${logback.classic.version}</version>
+			<groupId>org.tinylog</groupId>
+			<artifactId>tinylog-api</artifactId>
+			<version>${log.version}</version>
 		</dependency>
-		<!-- Logback spring extension -->
 		<dependency>
-			<groupId>org.logback-extensions</groupId>
-			<artifactId>logback-ext-spring</artifactId>
-			<version>${org.logback-extensions.version}</version>
+			<groupId>org.tinylog</groupId>
+			<artifactId>tinylog-impl</artifactId>
+			<version>${log.version}</version>
 		</dependency>
+
 	</dependencies>
 
 	<!-- Profile configuration -->
@@ -104,6 +104,7 @@
 			configuration directory of the active Maven profile. -->
 		<filters>
 			<filter>src/main/resources/profiles/${build.profile.id}/config_${build.profile.id}.properties</filter>
+			<filter>src/main/resources/profiles/${build.profile.id}/tinylog_${build.profile.id}.properties</filter>
 		</filters>
 
 		<!-- Placeholders that are found from the files located in the configured 
